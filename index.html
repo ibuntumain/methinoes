@@ -266,7 +266,7 @@ music.volume = 0.2;
 const carousel = document.getElementById('carousel');
 let scrollPos = 0;
 function infiniteScroll() {
-    scrollPos += 100;
+    scrollPos += 1.5;
     if(scrollPos >= carousel.scrollWidth / 2) scrollPos = 0;
     carousel.style.transform = `translateX(-${scrollPos}px)`;
     requestAnimationFrame(infiniteScroll);
